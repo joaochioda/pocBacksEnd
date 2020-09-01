@@ -9,7 +9,7 @@ routes.get('/users', UserController.index);
 routes.post('/team', TeamController.store);
 routes.get('/team', TeamController.index);
 
-routes.post('/users/:user_id/team', TeamController.postTeam);
+routes.post('/users/:user_id/team/:team_id', TeamController.postTeam);
 routes.get('/users_team/:user_id', TeamController.getTeam);
 
 

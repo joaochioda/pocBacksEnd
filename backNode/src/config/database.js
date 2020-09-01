@@ -1,6 +1,6 @@
 module.exports = {
     dialect: 'postgres',
-    host: 'localhost',
+    host: '/cloudsql/pocbackend:us-west2:poc-back-end',
     username: 'postgres',
     password: 'joao1234',
     database: 'bancodojao',

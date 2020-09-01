@@ -2,6 +2,8 @@ const User = require('../models/User');
 
 module.exports = {
     async index(req, res) {
+    console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+
         const users = await User.findAll();
 
         return res.json(users);
