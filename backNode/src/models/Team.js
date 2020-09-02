@@ -5,7 +5,8 @@ const { Model, DataTypes } = require('sequelize');
         super.init({
             name: DataTypes.STRING,
             location: DataTypes.STRING,
-        }, {
+        },
+        {
             sequelize: connection,
             tableName: 'teams',
         })

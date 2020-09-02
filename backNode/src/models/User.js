@@ -5,8 +5,10 @@ const { Model, DataTypes } = require('sequelize');
         super.init({
             name: DataTypes.STRING,
             email: DataTypes.STRING,
-        }, {
-            sequelize: connection
+            
+        },
+        {
+            sequelize: connection,
         })
     }
 
