@@ -12,7 +12,6 @@ for (i=0; i< 500; i++) {
 }
 
 const obj = JSON.stringify(joao);
-console.log(obj)
 
 const content = joao.map(e => JSON.stringify(e)).join(',\n');
 fs.writeFileSync('times.txt', content, 'UTF-8');

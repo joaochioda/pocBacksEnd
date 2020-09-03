@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js",
-    "start": "sequelize db:migrate && sequelize db:seed:all && nodemon src/server.js"
+    "dev": "sequelize db:migrate && sequelize db:seed:all && nodemon src/server.js",
+    "start": "sequelize db:migrate && sequelize db:seed:all && node src/server.js"
   },
   "author": "",
   "license": "ISC",

@@ -32,12 +32,10 @@ module.exports = {
         user.update({
             color_id
         }).then(result =>{
-            console.log(result)
          return res.json(user);
         }
           )
           .catch(err =>{
-            console.log(err)
             return res.json('Houve algum erro '+err);
         }
           )
