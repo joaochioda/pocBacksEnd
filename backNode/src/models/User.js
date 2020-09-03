@@ -14,6 +14,7 @@ const { Model, DataTypes } = require('sequelize');
 
     static associate(models) {
         this.belongsToMany(models.Team, { foreignKey: 'user_id', through: 'user_teams', as: 'teams' });
+        this.belongsTo(models.Color, { foreignKey: 'color_id', as: 'colors' });
     }
  }
 

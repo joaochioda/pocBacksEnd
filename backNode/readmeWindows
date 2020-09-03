@@ -1,5 +1,0 @@
-navegue ate a bin geralmente em:
-cd '.\Program Files\PostgreSQL\10\bin\'
-
-e rode o seguinte comando:
-pg_ctl -D "C:\Program Files\PostgreSQL\10\data" start
