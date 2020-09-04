@@ -1,0 +1,10 @@
+trazer 2k pessoas = 1.11 735 1.09
+trazer 1k teams =  841 912 817
+
+trazer 1 usuario que tem 1 cor e varios times = 274 210 193
+
+________________________________________________________________
+
+datastore 2k pessoas = 1.12 1.49 1.23
+
+trazer 1 usuario = 219 218 288

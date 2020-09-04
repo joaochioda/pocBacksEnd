@@ -11,7 +11,6 @@ for (i=0; i< 1000; i++) {
     joao.push(a);
 }
 
-const obj = JSON.stringify(joao);
 
 const content = joao.map(e => JSON.stringify(e)).join(',\n');
 fs.writeFileSync('joao.txt', content, 'UTF-8');

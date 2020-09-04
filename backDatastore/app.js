@@ -43,7 +43,9 @@ const getVisits = () => {
 app.post('/user', async (req, res, next) => {
   const {  name, age } = req.body;
   const newUser = await datastore.save({
-    key: datastore.key('user'),
+    key: datastore.key({namespace: 'bancodojao',
+    path: ['user']}),
+
     data: {name, age},
   });
 
@@ -56,10 +58,9 @@ app.post('/user', async (req, res, next) => {
 
 app.get('/user/:name', async (req, res) => {
         const { name } = req.params;
-        const query = datastore
-  .createQuery('user')
-  .filter('name', '=', name)
- 
+        const query = datastore.createQuery('bancodojao', 'user').filter('name', name);
+        
+
   const tasks = await datastore.runQuery(query);
   res
   .status(200)
